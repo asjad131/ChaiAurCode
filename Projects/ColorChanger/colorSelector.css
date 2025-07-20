@@ -1,0 +1,33 @@
+#grey{
+    background-color:grey;
+    border-style: solid;
+    display: inline-block;
+    text-align: center;
+}
+
+#white{
+    background-color:white;
+    border-style: solid;
+    display: inline-block;
+    text-align: center;
+}
+#blue{
+    
+    background-color:blue;
+    border-style: solid;
+    display: inline-block; 
+    text-align: center;   
+}
+#yellow{
+    background-color:yellow;
+    border-style: solid;
+    display: inline-block; 
+    text-align: center;   
+}
+.button{
+    height: 200px;
+    width: 200px;
+}
+div{
+    text-align: center;
+}

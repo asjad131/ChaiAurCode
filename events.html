@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Examples</title>
+</head>
+<body>
+    <h1>Chai Aur Code</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+
+    const displayText = function(){
+        console.log('Hello, this is a message from the displayText function!');
+    }
+    const myInterval = setInterval(displayText, 3000);
+
+    const changeText = function(){
+    document.querySelector('h1').innerText = 'Best JavaScript Course';
+   }
+    const setTimeOut = setTimeout(changeText, 3000);
+
+    document.getElementById('stop').addEventListener('click', function() {
+        clearTimeout(setTimeOut);
+        console.log('Timeout cleared');
+        clearInterval(myInterval);
+        console.log('Interval cleared');
+    });
+</script>
+</html>
